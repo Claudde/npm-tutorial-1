@@ -1,11 +1,14 @@
 {
 	"name": "fcc-learn-npm-package-json",
+	"homepage": "https://Claudde.github.io/npm-tutorial-1",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
 	"main": "server.js",
 	"scripts": {
-		"start": "node server.js"
+		"start": "node server.js",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"repository": {
 		"type": "git",
